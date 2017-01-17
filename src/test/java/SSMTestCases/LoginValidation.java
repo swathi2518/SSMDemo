@@ -24,7 +24,9 @@ public class LoginValidation extends BaseClass{
 			System.out.println("Testing with valid data");
 			test = extent.startTest("Verify Login with valid username and password ");
 			SSMLogin().SSMWebLogin(DataProviderFactory.getExcelConfig().getStringData("LoginData", 1, 0), DataProviderFactory.getExcelConfig().getStringData("LoginData", 1, 1));
-		
+			
+			
+			//Assert.assertEquals(NITloginPage.getadminhomepageurl(),DataProviderFactory.getConfig().getNITAdminHomePageURL(),"User is not able to login to site");
 			
 		
 		}

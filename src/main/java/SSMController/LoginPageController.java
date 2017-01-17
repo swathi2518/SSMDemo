@@ -15,10 +15,7 @@ import Factory.DataProviderFactory;
 import SSMModel.LoginPageModel;
 import SSMTestCases.BaseClass;
 
-/**
- * @author SMuppidi
- *
- */
+
 public class LoginPageController extends BaseClass
 {
 		WebDriver driver;
@@ -43,7 +40,12 @@ public class LoginPageController extends BaseClass
 			SSMloginPage.clickLogin();
 			test.log(LogStatus.INFO,"Login button is clicked");
 			
-		
+			System.out.println(SSMloginPage.getSSMHomePageTitle()) ;
+			
+			Assert.assertEquals(SSMloginPage.getSSMHomePageTitle(),"Home","User is not able to  login to SSM site");
+			
+			test.log(LogStatus.PASS,"Succesfully logged in to SSM ");
+			
 						
 			}
 		

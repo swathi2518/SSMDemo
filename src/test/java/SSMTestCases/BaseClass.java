@@ -52,6 +52,8 @@ public class BaseClass {
 		}
 		
 		
+		
+		
 		/*public RegPageController Regvalid()
 		{
 			driver.get(DataProviderFactory.getConfig().RegistartionPageURL());

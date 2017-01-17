@@ -48,10 +48,10 @@ public class LoginPageModel {
 			return errormessge;
 		}
 		
-		public String getFedhomepageurl(){
-			String studentgethomepageurl;
-			studentgethomepageurl = driver.getCurrentUrl();
-		return studentgethomepageurl;
+		public String getSSMHomePageTitle(){
+			String SSMgethomeTitle;
+			SSMgethomeTitle = driver.getTitle();
+		return SSMgethomeTitle;
 
 		}
 		
