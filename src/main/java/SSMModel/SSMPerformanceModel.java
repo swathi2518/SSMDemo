@@ -44,7 +44,6 @@ public class SSMPerformanceModel {
 			String SheduleNo="2 behind shedule";
 			char no=SheduleNo.charAt(0);
 			int num=Character.getNumericValue(no);
-			
 			Assert.assertEquals(LinksCount, num);
 			
 				

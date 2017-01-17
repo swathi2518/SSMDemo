@@ -18,7 +18,7 @@ public class LoginValidation extends BaseClass{
 	
 		@Test
 		
-		public void Fedloginwithvalidusernameandpassword() throws InterruptedException
+		public void SSMloginwithvalidusernameandpassword() throws InterruptedException
 		{
 			test = extent.startTest("Checking the login functionality");
 			System.out.println("Testing with valid data");
@@ -26,7 +26,7 @@ public class LoginValidation extends BaseClass{
 			SSMLogin().SSMWebLogin(DataProviderFactory.getExcelConfig().getStringData("LoginData", 1, 0), DataProviderFactory.getExcelConfig().getStringData("LoginData", 1, 1));
 			
 			
-			//Assert.assertEquals(NITloginPage.getadminhomepageurl(),DataProviderFactory.getConfig().getNITAdminHomePageURL(),"User is not able to login to site");
+			
 			
 		
 		}

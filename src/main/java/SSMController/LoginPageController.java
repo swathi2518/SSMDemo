@@ -44,7 +44,7 @@ public class LoginPageController extends BaseClass
 			
 			Assert.assertEquals(SSMloginPage.getSSMHomePageTitle(),"Home","User is not able to  login to SSM site");
 			
-			test.log(LogStatus.PASS,"Succesfully logged in to SSM ");
+			test.log(LogStatus.PASS,"Succesfully logged in to SSM Web Application ");
 			
 						
 			}
